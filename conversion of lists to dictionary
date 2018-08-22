@@ -1,0 +1,16 @@
+# converting lists into a dictionary
+
+# take two separate lists with elements
+
+countries = ["usa" , "india" , "germany", "france"]
+cities = [ 'washington', 'delhi', 'berlin' , 'paris']
+
+# make a dictionary
+z = zip(countries, cities)
+d = dict(z)
+
+#dislay key values pairs in dictionary d 
+print('{:15s} -- {:15s}'.format('country', 'capital'))
+
+for k in d :
+    print('{:15s} -- {:15s}'.format(k, d[k])) 
